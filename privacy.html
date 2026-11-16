@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Chat Folders Pro - 隐私政策 / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --accent: #4F46E5;
+    --border: #e2e8f0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 40px; }
+  header h1 { font-size: 26px; margin: 0 0 8px; color: var(--accent); }
+  header p { color: var(--muted); font-size: 14px; margin: 0; }
+  .lang-switch {
+    display: inline-flex; gap: 4px; margin-top: 16px;
+    background: #eef2ff; border-radius: 8px; padding: 4px;
+  }
+  .lang-switch button {
+    border: none; background: transparent; padding: 6px 16px;
+    border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500;
+    color: var(--muted);
+  }
+  .lang-switch button.active { background: var(--accent); color: #fff; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 28px 32px; margin-bottom: 24px;
+  }
+  h2 { font-size: 18px; margin: 0 0 14px; color: var(--text); }
+  h3 { font-size: 15px; margin: 18px 0 8px; color: var(--accent); }
+  p { margin: 6px 0; font-size: 14px; color: var(--text); }
+  ul { margin: 6px 0; padding-left: 22px; }
+  li { font-size: 14px; margin: 4px 0; }
+  .tag {
+    display: inline-block; font-size: 11px; padding: 2px 8px;
+    border-radius: 10px; background: #ecfdf5; color: #059669;
+    font-weight: 600; margin-right: 6px;
+  }
+  .tag.red { background: #fef2f2; color: #dc2626; }
+  .tag.yellow { background: #fffbeb; color: #d97706; }
+  .section-en { display: none; }
+  footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 40px; }
+  a { color: var(--accent); }
+  code {
+    background: #f1f5f9; padding: 1px 6px; border-radius: 4px;
+    font-size: 12px; font-family: "SF Mono", Consolas, monospace;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AI Chat Folders Pro</h1>
+    <p>最后更新 / Last updated: 2026-11-16</p>
+    <div class="lang-switch">
+      <button id="btn-zh" class="active">中文</button>
+      <button id="btn-en">English</button>
+    </div>
+  </header>
+
+  <!-- 中文 -->
+  <div id="lang-zh">
+    <div class="card">
+      <h2>概述</h2>
+      <p>AI Chat Folders Pro（以下简称「本扩展」）是一款帮助用户在 DeepSeek 和豆包（Doubao）平台上管理对话的浏览器扩展。本隐私政策说明我们如何处理用户数据。</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="tag">收集</span>我们收集哪些数据</h2>
+
+      <h3>1. 本地存储（不离开浏览器）</h3>
+      <p>以下数据全部存储在你浏览器的 <code>chrome.storage.local</code> 中，不会自动上传：</p>
+      <ul>
+        <li>文件夹结构与分组信息</li>
+        <li>收藏的对话链接、备注和置顶状态</li>
+        <li>语言偏好、字体缩放设置</li>
+        <li>锁屏密码（仅加盐 SHA-256 哈希，无法还原明文）</li>
+      </ul>
+
+      <h3>2. 登录时的最小信息</h3>
+      <p>当你使用微信或 Google 登录时，扩展向后端发送：</p>
+      <ul>
+        <li>浏览器 User-Agent（用于安全审计）</li>
+        <li>IP 地址（用于防止欺诈和设备数量限制）</li>
+        <li>随机生成的设备 ID（不包含个人信息）</li>
+      </ul>
+      <p>这些信息仅在登录和登出时请求，登录成功后不再重复发送。</p>
+
+      <h3>3. 版本检查</h3>
+      <p>扩展启动时会向我们的服务器检查是否有新版本，请求不携带任何用户标识。</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="tag yellow">可选</span>账号相关信息与用户提交内容</h2>
+      <ul>
+        <li><strong>邮箱绑定（可选）</strong>：用户主动绑定时保存邮箱地址，验证码 5 分钟内有效、用后即删</li>
+        <li><strong>留言 / 反馈（可选）</strong>：用户主动提交时保存留言内容与填写的联系方式，仅用于回复与改进产品</li>
+        <li><strong>云同步（可选）</strong>：登录后上传用户自己整理的文件夹名称、对话标题与对话链接，用于在用户自己的设备间同步</li>
+      </ul>
+      <p>以上内容均不会用于广告、画像或向第三方共享。</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="tag red">不收集</span>我们不做的事</h2>
+      <ul>
+        <li>不读取你在 DeepSeek / 豆包的对话内容</li>
+        <li>不追踪你的浏览历史</li>
+        <li>不将数据分享给任何第三方</li>
+        <li>不用于广告投放或行为分析</li>
+        <li>不在你未登录时发送任何网络请求（除版本检查外）</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="tag yellow">云端同步</span>可选功能</h2>
+      <p>当你主动登录账号后，文件夹和收藏数据会自动在你登录的设备间同步。同步仅针对你自己的账号，我们不介入也不查看你的数据内容。登出账号后，扩展停止所有网络请求。</p>
+    </div>
+
+    <div class="card">
+      <h2>数据删除</h2>
+      <ul>
+        <li>扩展卸载时，浏览器自动清除所有本地存储</li>
+        <li>扩展内「导出」功能可将所有数据导出为 JSON 文件</li>
+        <li>登出账号可停止云端同步</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>联系我们</h2>
+      <p>对隐私政策有疑问？请发送邮件到 <a href="mailto:syfei49@163.com">syfei49@163.com</a></p>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div id="lang-en" class="section-en">
+    <div class="card">
+      <h2>Overview</h2>
+      <p>AI Chat Folders Pro ("the Extension") is a browser extension that helps users organize chat conversations on DeepSeek and Doubao platforms. This privacy policy explains how we handle user data.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="tag">Collects</span> What we collect</h2>
+
+      <h3>1. Local storage (never leaves your browser)</h3>
+      <p>The following data is stored entirely in <code>chrome.storage.local</code> and is never uploaded:</p>
+      <ul>
+        <li>Folder structure and groupings</li>
+        <li>Favorited chat links, notes, and pin status</li>
+        <li>Language preference and font scale settings</li>
+        <li>Screen lock password (salted SHA-256 hash only, cannot be reversed)</li>
+      </ul>
+
+      <h3>2. Minimal info at sign-in</h3>
+      <p>When you sign in via WeChat or Google, the Extension sends to our backend:</p>
+      <ul>
+        <li>Browser User-Agent (for security auditing)</li>
+        <li>IP address (for fraud prevention and device limit enforcement)</li>
+        <li>Randomly generated device ID (contains no personal information)</li>
+      </ul>
+      <p>This info is requested only at sign-in and sign-out time.</p>
+
+      <h3>3. Version check</h3>
+      <p>At startup, the Extension checks our server for updates without carrying any user identifier.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="tag yellow">Optional</span> Account info &amp; user-submitted content</h2>
+      <ul>
+        <li><strong>Email binding (optional)</strong> — stores the email address only if the user chooses to bind one; the verification code expires in 5 minutes and is deleted after use</li>
+        <li><strong>Feedback (optional)</strong> — stores the message and the contact info the user types, used only to reply and improve the product</li>
+        <li><strong>Cloud sync (optional)</strong> — after sign-in, uploads the folder names, conversation titles and conversation links the user created, solely to sync across the user's own devices</li>
+      </ul>
+      <p>None of this is used for advertising, profiling, or shared with third parties.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="tag red">Does NOT collect</span> What we never do</h2>
+      <ul>
+        <li>Never reads your chat content on DeepSeek / Doubao</li>
+        <li>Never tracks your browsing history</li>
+        <li>Never shares data with third parties</li>
+        <li>Never uses data for ads or behavioral analytics</li>
+        <li>Never sends network requests unless you sign in (version check aside)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="tag yellow">Cloud sync</span> Optional feature</h2>
+      <p>Once you sign in, folders and favorites auto-sync across your signed-in devices. Syncing is between your own devices only — we do not access or inspect your data. Signing out stops all network activity.</p>
+    </div>
+
+    <div class="card">
+      <h2>Data deletion</h2>
+      <ul>
+        <li>Uninstalling the Extension clears all local storage automatically</li>
+        <li>"Export" inside the Extension exports all data as a JSON file</li>
+        <li>Signing out stops cloud sync immediately</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact us</h2>
+      <p>Questions about this privacy policy? Email <a href="mailto:syfei49@163.com">syfei49@163.com</a></p>
+    </div>
+  </div>
+
+  <footer>AI Chat Folders Pro · Privacy Policy</footer>
+</div>
+
+<script>
+  const zh = document.getElementById('lang-zh');
+  const en = document.getElementById('lang-en');
+  const btnZh = document.getElementById('btn-zh');
+  const btnEn = document.getElementById('btn-en');
+  function show(lang) {
+    if (lang === 'en') {
+      zh.style.display = 'none'; en.style.display = 'block';
+      btnZh.classList.remove('active'); btnEn.classList.add('active');
+      document.documentElement.lang = 'en';
+    } else {
+      zh.style.display = 'block'; en.style.display = 'none';
+      btnZh.classList.add('active'); btnEn.classList.remove('active');
+      document.documentElement.lang = 'zh-CN';
+    }
+    try { localStorage.setItem('privacy_lang', lang); } catch(e){}
+  }
+  let saved = 'zh';
+  try { saved = localStorage.getItem('privacy_lang') || 'zh'; } catch(e){}
+  show(saved);
+  btnZh.addEventListener('click', () => show('zh'));
+  btnEn.addEventListener('click', () => show('en'));
+</script>
+</body>
+</html>
